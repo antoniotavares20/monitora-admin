@@ -1,0 +1,45 @@
+language: node_js
+stage: deploy
+
+node_js:
+ - '10.16.0'
+
+sudo: true
+dist: trusty 
+
+branches:
+ only:
+ - master
+
+cache:
+
+  directories:
+    - node_modules
+
+before_script:
+- npm install -g ionic cordova
+- npm install
+# - export CHROME_BIN=/usr/bin/google-chrome
+# - export DISPLAY=:99.0
+# - sh -e /etc/init.d/xvfb start
+# - sudo apt-get update
+# - sudo apt-get install -y libappindicator1 fonts-liberation
+# - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# - sudo dpkg -i google-chrome*.deb
+ 
+script:
+-  ionic build --prod -- --base-href='https://antoniotavares20.github.io/Monitora-Admin/'
+- npx angular-cli-ghpages --dir=www
+#- ionic cordova build browser --prod  --release
+ # - ng test --watch false -cc
+ # - npm run e2e
+ # - ng build --base-href 'https://antoniotavares20.github.io/monitora-mobile/'
+
+deploy:
+ provider: pages
+ skip-cleanup: true
+ github-token: $TANGO
+ keep-history: true
+ on:
+   branch: master
+ local_dir: www
