@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="secondary">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -8,7 +8,7 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
+<ion-content >
     <ion-card class="welcome-card" >
       <ion-card-header>
         <ion-card-title>Painel de Homologação de Ativos Elétricos Ativos</ion-card-title>
@@ -23,8 +23,16 @@
             <ion-card-title>Ar condicionado</ion-card-title>
             </ion-card-header>
             <ion-card-content>
+              <ion-item>
+                <ion-label>Sala 530</ion-label>
+                <ion-checkbox color="dark" checked="true"></ion-checkbox>
+              </ion-item>
               
-              Sala: Horario: antes das 15?       
+              <ion-item>
+                <ion-label>Sala 200</ion-label>
+                <ion-checkbox disabled="true"></ion-checkbox>
+              </ion-item>
+
             </ion-card-content>
             </ion-card>
             <ion-card class="welcome-card">
@@ -32,7 +40,15 @@
             <ion-card-title>Lâmpadas</ion-card-title>
             </ion-card-header>
             <ion-card-content>
-              Sala: Horario: antes das 15?
+              <ion-item>
+                <ion-label>Sala 530</ion-label>
+                <ion-checkbox color="dark" checked="true"></ion-checkbox>
+              </ion-item>
+              
+              <ion-item>
+                <ion-label>Sala 200</ion-label>
+                <ion-checkbox disabled="false"></ion-checkbox>
+              </ion-item>
             </ion-card-content>
           </ion-card>
     </ion-card>
