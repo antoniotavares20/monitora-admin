@@ -27,7 +27,7 @@ before_script:
 
 script:
 
--  ionic build --prod --base-href='https://antoniotavares20.github.io/Monitora-Admin/'
+- ionic build --prod -- --base-href='https://antoniotavares20.github.io/Monitora-Admin/'
 #- ionic cordova build browser --prod  --release
  # - ng test --watch false -cc
  # - npm run e2e
