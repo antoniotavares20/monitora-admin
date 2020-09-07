@@ -42,10 +42,3 @@ deploy:
    branch: master
  local_dir: www
 
- deploy:
-  provider: firebase
-   github-token: $FIREBASE_TOKEN
-  message: build $TRAVIS_BUILD_NUMBER $TRAVIS_BRANCH/$COMMIT_HASH
-  on:
-   branch: master
- local_dir: www
