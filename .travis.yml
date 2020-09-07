@@ -5,8 +5,8 @@ node_js:
  - '10.16.0'
 
 
-affter_sucess:
-  - firebase deploy --token $FIREBASE_TOKEN
+#affter_sucess:
+#  - firebase deploy --token $FIREBASE_TOKEN
   
 sudo: true
 dist: trusty 
@@ -24,7 +24,7 @@ before_script:
 - npm install -g ionic cordova
 
 script:
- - npm install -g firebase-tools
+ #- npm install -g firebase-tools
 - ionic build --prod -- --base-href='https://antoniotavares20.github.io/Monitora-Admin/'
 #- ionic cordova build browser --prod  --release
  # - ng test --watch false -cc
