@@ -31,7 +31,7 @@ script:
  #- npm install -g firebase-tools
  - ng build
 - ionic build --prod -- --base-href='https://antoniotavares20.github.io/Monitora-Admin/'
-- firebase deploy --only hosting,functions --token $FIREBASE_TOKEN
+- firebase deploy --only hosting,functions --token $FIREBASE_TOKEN --base-href='https://antoniotavares20.github.io/Monitora-Admin/'
 
 
 #- ionic cordova build browser --prod  --release
