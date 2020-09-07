@@ -23,10 +23,10 @@ cache:
 before_script:
 - npm install -g ionic cordova
 - npm install firebase-tools -g
-- npm install @ionic-native/firebase
-- ionic cap sync
-
   - cd functions && npm install
+- ionic cordova plugin add cordova-plugin-firebase
+- npm install @ionic-native/firebase
+
 
 script:
  #- npm install -g firebase-tools
