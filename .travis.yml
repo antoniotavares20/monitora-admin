@@ -23,14 +23,14 @@ cache:
 before_script:
 - npm install -g ionic cordova
 - npm install firebase-tools -g
-  - cd functions && npm install
 - ionic cordova plugin add cordova-plugin-firebase
 - npm install @ionic-native/firebase
-
+  - cd functions && npm install
 
 script:
  #- npm install -g firebase-tools
 - ionic build --prod -- --base-href='https://antoniotavares20.github.io/Monitora-Admin/'
+
 - firebase deploy --only hosting,functions --token $FIREBASE_TOKEN
 #- ionic cordova build browser --prod  --release
  # - ng test --watch false -cc
