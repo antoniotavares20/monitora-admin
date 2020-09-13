@@ -1,9 +1,9 @@
-<ion-header>
-  <ion-toolbar class="primary">
+<ion-header color="primary">
+  <ion-toolbar class="primary" >
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button color="ion-color-secondary" ></ion-menu-button>
     </ion-buttons>
-     <ion-title>  
+     <ion-title class="primary">  
   <table>
   <tr>
  <th> <img class="logo" src="assets/icon/favicon.png" width="50px" style="display:inline-block" height="50px" /> </th>
@@ -12,12 +12,10 @@
   <p class="phont">Adminstrador</p> </th>
 
   </table>
-
-  
-      </ion-title>
+  </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content >
+<ion-content  >
     <ion-card class="welcome-card" >
       <ion-card-header>
         <ion-card-title>Painel de Homologação de Ativos Elétricos(Ligados)</ion-card-title>
@@ -27,49 +25,19 @@
           confirme nos itens abaixo, quais equipamentos foram desativados no momento:
         </p>
       </ion-card-content>
-          <ion-card class="welcome-card">
-            <ion-card-header>
-            <ion-card-title>Ar condicionado</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              <ion-item>
-                <ion-label>Sala 530</ion-label>
-                <ion-checkbox color="dark" checked="true"></ion-checkbox>
-              </ion-item>
-              
-              <ion-item>
-                <ion-label>Sala 200</ion-label>
-                <ion-checkbox disabled="true"></ion-checkbox>
-              </ion-item>
 
-            </ion-card-content>
-            </ion-card>
-            <ion-card class="welcome-card">
-            <ion-card-header>
-            <ion-card-title>Lâmpadas</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              <ion-item>
-                <ion-label>Sala 530</ion-label>
-                <ion-checkbox color="dark" checked="true"></ion-checkbox>
-              </ion-item>
-              
-              <ion-item>
-                <ion-label>Sala 200</ion-label>
-                <ion-checkbox disabled="false"></ion-checkbox>
-              </ion-item>
-            </ion-card-content>
-          </ion-card>
+    <app-sala></app-sala>
+
     </ion-card>
     <ion-list lines="none">
       <ion-list-header>
         <ion-label>Ajuda?</ion-label>
       </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
+      <ion-item href="#">
         <ion-icon slot="start" color="medium" name="book"></ion-icon>
         <ion-label>Manual do Usuário</ion-label>
       </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
+      <ion-item href="#">
         <ion-icon slot="start" color="medium" name="build"></ion-icon>
         <ion-label>Reportar problemas</ion-label>
       </ion-item>

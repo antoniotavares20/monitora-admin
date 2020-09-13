@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
-
+import { SalaComponent } from "./content/sala/sala.component"
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -11,15 +11,21 @@ import { HomePage } from './home.page';
     CommonModule,
     FormsModule,
     IonicModule,
+
     RouterModule.forChild([
       {
         path: '',
         component: HomePage
+      },
+      {
+        path: 'sala',
+        component: SalaComponent
       }
     ])
   ],
   declarations: [
     HomePage,
+    SalaComponent
   ],
 })
 

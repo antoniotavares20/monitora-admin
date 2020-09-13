@@ -10,15 +10,40 @@ export class ListPage implements OnInit {
   private icons = [
     'pin'
   ];
-  public items: Array<{ title: string; note: string; icon: string }> = [];
+  public sala: Array<{ id: number ;centroAula: string; totalSalas: string; localizacao: string }> = [];
   constructor() {
-    for (let i = 1; i <= 3; i++) {
-      this.items.push({
-        title: 'Centro de Aulas ' + i,
-        note: 'O centro de Aulas ' + i + 'Possui 110 Salas',
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
+
+      this.sala.push({
+        id: 1,
+        centroAula: 'A',
+        totalSalas: '110',
+        localizacao: '2mm'
       });
-    }
+    this.sala.push({
+      id: 2,
+      centroAula: 'B',
+      totalSalas: '110',
+      localizacao: '4mm'
+    });
+    this.sala.push({
+      id: 3,
+      centroAula: 'C',
+      totalSalas: '150',
+      localizacao: '3mm'
+    });
+    this.sala.push({
+      id: 5,
+      centroAula: 'D',
+      totalSalas: '200',
+      localizacao: '3 Km'
+    });
+    this.sala.push({
+      id: 5,
+      centroAula: 'E',
+      totalSalas: '140',
+      localizacao: '4 Km'
+    });
+ 
   }
 
   ngOnInit() {

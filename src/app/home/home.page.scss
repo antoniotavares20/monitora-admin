@@ -1,24 +1,25 @@
-.possition{
-  --ion-background-color: #303F9F;
-
-}
 
 .welcome-card img {
   max-height: 35vh;
   overflow: hidden;
 }
-.header-md:after {
-background-color: #303F9F;
 
+
+.alinhamentCenter{
+  text-align: center;
+}
+.positionbutton{
+  background-color: rgb(40, 68, 194);
+  margin-top: 1rem ;
+  
 }
 
-.header-md:content {
-background-color: #303F9F;
 
-}
+
+
 
 .newcolor{
-  background-color: #303F9F;
+  background-color: rgb(40, 68, 194);;
 }
 :root {
   --ion-color-secondary: #d17000;
@@ -27,12 +28,12 @@ background-color: #303F9F;
   --ion-color-secondary-contrast-rgb: 255,255,255;
   --ion-color-secondary-shade: #005a00;
   --ion-color-secondary-tint: #1a751a;
-  --ion-color-primary: #303F9F;
+
   --ion-background-color: rgb(228, 231, 17);
 }
 
 .primary {
-    --ion-toolbar-background:  rgb(71, 87, 189);
+    --ion-toolbar-background:  rgb(40, 68, 194);
     --ion-text-color:  rgb(231, 192, 17);
 
 }
